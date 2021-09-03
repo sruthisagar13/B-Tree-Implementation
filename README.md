@@ -23,7 +23,7 @@ We are making a right biased tree. By this we mean if maxLimits are even we will
 
 Insertion is based on the primary key. Hence all the properties of the primary key has to be followed. No dublicate insertion has to be done with same primary key!
 
-In the code we have used a ptr2parent which directly give access to the parent of the node with ease, which is little bit deviated from B+ Tree defination where we don't use it. Consequences of this are yet to be unfold. Meanwhile, I have added it as a question in stackoverflow (NOW IT HAS BEEN REMOVED AS IT WILL CREATE A MESS WHILE DELETION).
+In the code we have used a ptr2parent which directly give access to the parent of the node with ease, which is little bit deviated from B+ Tree defination where we don't use it. 
 
 We are saving the *ptr2next explicitly while ideally it is saved as the last pointer in the pointerset. But here as we are using union to save the memory and seperate the leaf and non-leaf nodes, because of this *ptr2next is explicitly saved !!
 
